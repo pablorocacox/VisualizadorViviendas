@@ -1,0 +1,126 @@
+{
+  "elementList": [
+    {
+      "propertyCode": "ejemploejemploejemplo",
+      "thumbnail": "ejemploejemploejemplo",
+      "numPhotos": 21,
+      "floor": "1",
+      "price": 119990,
+      "priceInfo": {
+        "price": {
+          "amount": 119990,
+          "currencySuffix": "€"
+        }
+      },
+      "propertyType": "flat",
+      "operation": "sale",
+      "size": 68,
+      "exterior": true,
+      "rooms": 2,
+      "bathrooms": 1,
+      "address": "Piso Ejemplo, Torre de la Horadada, Pilar de la Horadada",
+      "province": "Alicante",
+      "municipality": "Pilar de la Horadada",
+      "district": "Torre de la Horadada",
+      "country": "es",
+      "locationId": "0-EU-ES-03-05-009-902-05",
+      "latitude": 37.8625444,
+      "longitude": -0.7636674,
+      "showAddress": true,
+      "url": "https://www.idealista.com/inmueble/ejemploejemploejemplo/",
+      "description": "ejemploejemploejemploejemploejemploejemploejemploejemploejemploejemploejemploejemplo ejemploejemploejemploejemploejemploejemplo",
+      "hasVideo": true,
+      "status": "good",
+      "newDevelopment": false,
+      "favourite": false,
+      "newProperty": false,
+      "multimedia": {
+        "images": [
+          {
+            "url": "ejemploejemploejemplo",
+            "tag": "facade"
+          }
+        ],
+        "videos": [
+          {
+            "url": "ejemploejemploejemplo",
+            "thumbnail": "ejemploejemploejemplo",
+            "multimediaId": 1111,
+            "hasExternalVideoPlayer": false
+          }
+        ]
+      },
+      "contactInfo": {
+        "commercialName": "NAME",
+        "phone1": {
+          "phoneNumber": "000000",
+          "formattedPhone": "000000",
+          "prefix": "34",
+          "phoneNumberForMobileDialing": "+0000000",
+          "nationalNumber": true
+        },
+        "contactName": "NAME",
+        "userType": "professional",
+        "contactMethod": "all",
+        "micrositeShortName": "NAME",
+        "totalAds": 0,
+        "needLoginForContact": false
+      },
+      "hasLift": false,
+      "priceByArea": 1765,
+      "features": {
+        "hasSwimmingPool": false,
+        "hasTerrace": true,
+        "hasAirConditioning": false,
+        "hasBoxRoom": true,
+        "hasGarden": false
+      },
+      "detailedType": {
+        "typology": "flat"
+      },
+      "suggestedTexts": {
+        "title": "Piso Ejemplo, Torre de la Horadada, Pilar de la Horadada"
+      },
+      "hasPlan": false,
+      "has3DTour": false,
+      "has360": false,
+      "hasStaging": false,
+      "highlight": {
+        "groupDescription": "Destacado"
+      },
+      "savedAd": {},
+      "ribbons": [],
+      "notes": [],
+      "topNewDevelopment": false,
+      "newDevelopmentHighlight": false,
+      "topPlus": false,
+      "preferenceHighlight": true,
+      "topHighlight": false,
+      "urgentVisualHighlight": false,
+      "visualHighlight": false
+    }
+  ],
+  "total": 1,
+  "totalPages": 1,
+  "actualPage": 1,
+  "itemsPerPage": 1,
+  "numPaginations": 0,
+  "summary": [
+    "Comprar casas y pisos en Torre de la Horadada, Pilar de la Horadada",
+    "Todos los precios",
+    "Todos los tamaños"
+  ],
+  "filter": {
+    "locationName": "Torre de la Horadada, Pilar de la Horadada"
+  },
+  "alertName": "Viviendas en Torre de la Horadada, Pilar de la Horadada",
+  "totalAppliedFilters": 0,
+  "searchTitle": "Torre de la Horadada, Pilar de la Horadada",
+  "geoReach": {
+    "allowed": true,
+    "listingPosition": 14
+  },
+  "lowerRangePosition": 0,
+  "upperRangePosition": 40,
+  "paginable": true
+}
