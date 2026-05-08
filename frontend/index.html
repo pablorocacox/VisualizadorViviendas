@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar Inmobiliario</title>
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-shell">
+        <header class="app-header">
+            <div>
+                <p class="eyebrow">Idealista JSON explorer</p>
+                <h1>Radar inmobiliario</h1>
+                <p class="header-copy">Analiza precios, ubicación y características de tus propiedades procesadas en un panel local.</p>
+            </div>
+            <div class="header-badge">
+                <span class="badge-dot"></span>
+                Datos locales
+            </div>
+        </header>
+
+        <section class="stats" aria-label="Resumen de propiedades">
+            <div class="stat-card">
+                <span class="stat-label">Propiedades</span>
+                <strong id="totalProperties">0</strong>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Precio medio</span>
+                <strong id="avgPrice">0 €</strong>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Precio por m²</span>
+                <strong id="avgPriceArea">0 €/m²</strong>
+            </div>
+        </section>
+
+        <main class="dashboard">
+            <aside class="filters-panel" aria-label="Filtros de búsqueda">
+                <div class="panel-heading">
+                    <div>
+                        <p class="eyebrow">Filtros</p>
+                        <h2>Búsqueda</h2>
+                    </div>
+                    <button type="button" id="resetFilters" class="ghost-button">Limpiar</button>
+                </div>
+
+                <div class="filters">
+                    <label class="field">
+                        <span>Precio mínimo</span>
+                        <input type="number" id="minPrice" placeholder="120000" min="0">
+                    </label>
+                    <label class="field">
+                        <span>Precio máximo</span>
+                        <input type="number" id="maxPrice" placeholder="450000" min="0">
+                    </label>
+                    <label class="field">
+                        <span>Habitaciones mínimas</span>
+                        <input type="number" id="rooms" placeholder="2" min="0">
+                    </label>
+                    <label class="field">
+                        <span>Municipio</span>
+                        <select id="municipality">
+                            <option value="">Todos los municipios</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="feature-group" aria-label="Características">
+                    <p class="group-title">Características</p>
+                    <label class="toggle"><input type="checkbox" id="pool"><span>Piscina</span></label>
+                    <label class="toggle"><input type="checkbox" id="terrace"><span>Terraza</span></label>
+                    <label class="toggle"><input type="checkbox" id="lift"><span>Ascensor</span></label>
+                    <label class="toggle"><input type="checkbox" id="ac"><span>Aire acondicionado</span></label>
+                    <label class="toggle"><input type="checkbox" id="parking"><span>Parking</span></label>
+                </div>
+            </aside>
+
+            <section class="map-panel" aria-label="Mapa de propiedades">
+                <div class="section-toolbar">
+                    <div>
+                        <p class="eyebrow">Mapa</p>
+                        <h2>Distribución geográfica</h2>
+                    </div>
+                    <span id="resultSummary" class="result-pill">0 resultados</span>
+                </div>
+                <div class="map-wrap">
+                    <div id="map"></div>
+                    <div class="price-legend" aria-label="Leyenda de precios">
+                        <span><i class="legend-low"></i>&lt;150k</span>
+                        <span><i class="legend-mid-low"></i>150k-250k</span>
+                        <span><i class="legend-mid"></i>250k-400k</span>
+                        <span><i class="legend-high"></i>400k-650k</span>
+                        <span><i class="legend-premium"></i>&gt;650k</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="list-panel" aria-label="Listado de propiedades">
+                <div class="section-toolbar">
+                    <div>
+                        <p class="eyebrow">Listado</p>
+                        <h2>Propiedades filtradas</h2>
+                    </div>
+                </div>
+                <div id="propertyList"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

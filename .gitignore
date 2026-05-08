@@ -1,0 +1,24 @@
+# Entorno virtual
+venv/
+env/
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# Variables de entorno
+.env
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Datos JSON reales
+data/*.json
+
+# Mantener ejemplos y estructura
+!data/example.json
+!data/.gitkeep
